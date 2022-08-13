@@ -1,0 +1,62 @@
+.tokens {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.token-box {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+    border: 2px solid;
+    border-radius: 15px;
+    box-shadow: 3px 3px white;
+    background-color: black;
+
+}
+
+#loyalty-title {
+    text-align: center;
+    font-family: 'Cormorant SC', serif, Arial, Helvetica, sans-serif;
+    color: white;
+    text-shadow: 2px 2px gray;
+}
+
+#first-token-counter, #second-token-counter,
+#third-token-counter, #forth-token-counter {
+    font-family: 'MedievalSharp', cursive, Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    margin: 10px;
+    color: white;
+    text-shadow: 0 1px 0 #ccc, 
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
+
+#first-token-plus-button, #first-token-minus-button, 
+#second-token-plus-button, #second-token-minus-button,
+#third-token-plus-button, #third-token-minus-button,
+#forth-token-plus-button, #forth-token-minus-button {
+    font-family: 'MedievalSharp', cursive, Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-align: center;
+    border: 2px solid;
+    border-radius: 15px;
+    margin: 5px 10px;
+    box-shadow: 3px 3px black;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    user-select: none;
+}

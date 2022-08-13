@@ -1,0 +1,34 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 300px;
+}
+
+.submit-container{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+
+.main {
+    height: 100%;
+}
+
+.home-container h3 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.home-container button {
+    margin-top: 20px;
+}
+
+.home-container input {
+    width:auto;
+    margin: 10px 10px;
+}
+

@@ -1,0 +1,788 @@
+body {
+    display: block;
+    background-image: url("./background.png");
+    background-position: center;
+    background-size: cover;
+
+}
+
+#title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+    border: 2px solid;
+    border-radius: 15px;
+    color: white;
+    background-color: black;
+    text-shadow: 2px 2px gray;
+    font-family: 'Cormorant SC', serif, Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;
+    flex-shrink: 2;
+    margin-bottom: 40px;
+    }
+
+.life-counter-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+    border: 2px solid;
+    border-radius: 15px;
+    box-shadow: 3px 3px white;
+    background-color: black;
+    
+    }
+    
+    #life-counter-title {
+        text-align: center;
+        font-family: 'Cormorant SC', serif, Arial, Helvetica, sans-serif;
+        color: white;
+        text-shadow: 2px 2px gray;
+    }
+    
+    #life-counter {
+        text-align: center;
+        font-size: 25px;
+        font-weight: 600;
+        color: white;
+        margin: 10px;
+        text-shadow: 0 1px 0 #ccc, 
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+        font-family: 'MedievalSharp', cursive, Arial, Helvetica, sans-serif;
+    }
+    
+    #life-plus-button, #life-minus-button {
+        font-family: 'MedievalSharp', cursive, Arial, Helvetica, sans-serif;
+        font-size: 25px;
+        text-align: center;
+        border: 2px solid;
+        border-radius: 15px;
+        margin: 5px 10px;
+        box-shadow: 3px 3px black;
+        color: white;
+        background-color: black;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .counter-box :hover , #reset-button :hover, .plains-container :hover, .swamp-container :hover,
+    .mountain-container :hover, .forest-container :hover, .island-container :hover, .colorless-container :hover {
+        transition: ease-in;
+        transition-duration: 80ms;
+        opacity: 0.7;
+    }
+
+
+
+
+.p2-commander-damage-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+    border: 2px solid;
+    border-radius: 15px;
+    box-shadow: 3px 3px white;
+    background-color: black;
+
+}
+
+#p2-commander-damage-title {
+    text-align: center;
+    color: white;
+    font-family: 'Cormorant SC', serif, Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px gray;
+}
+
+#p2-commander-damage-counter {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    margin: 10px;
+    color: white;
+    text-shadow: 0 1px 0 #ccc, 
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+    font-family: 'MedievalSharp', cursive, Arial, Helvetica, sans-serif;
+}
+
+#p2-commander-damage-plus-button, #p2-commander-damage-minus-button {
+    font-family: 'MedievalSharp', cursive, Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-align: center;
+    border: 2px solid;
+    border-radius: 15px;
+    margin: 5px 10px;
+    box-shadow: 3px 3px black;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    user-select: none;
+}
+
+.p3-commander-damage-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+    border: 2px solid;
+    border-radius: 15px;
+    box-shadow: 3px 3px white;
+    background-color: black;
+
+}
+
+#p3-commander-damage-title {
+    text-align: center;
+    color: white;
+    font-family: 'Cormorant SC', serif, Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px gray;
+}
+
+#p3-commander-damage-counter {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    margin: 10px;
+    color: white;
+    text-shadow: 0 1px 0 #ccc, 
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+    font-family: 'MedievalSharp', cursive, Arial, Helvetica, sans-serif;
+}
+
+#p3-commander-damage-plus-button, #p3-commander-damage-minus-button {
+    font-family: 'MedievalSharp', cursive, Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-align: center;
+    border: 2px solid;
+    border-radius: 15px;
+    margin: 5px 10px;
+    box-shadow: 3px 3px black;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+.p4-commander-damage-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+    border: 2px solid;
+    border-radius: 15px;
+    box-shadow: 3px 3px white;
+    background-color: black;
+
+}
+
+#p4-commander-damage-title {
+    text-align: center;
+    font-family: 'Cormorant SC', serif, Arial, Helvetica, sans-serif;
+    color: white;
+    text-shadow: 2px 2px gray;
+}
+
+#p4-commander-damage-counter {
+    font-family: 'MedievalSharp', cursive, Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    margin: 10px;
+    color: white;
+    text-shadow: 0 1px 0 #ccc, 
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
+
+#p4-commander-damage-plus-button, #p4-commander-damage-minus-button {
+    font-family: 'MedievalSharp', cursive, Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-align: center;
+    border: 2px solid;
+    border-radius: 15px;
+    margin: 5px 10px;
+    box-shadow: 3px 3px black;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    user-select: none;
+}
+
+#mana-title {
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Cormorant SC', serif, Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px black;
+    color: white;
+}
+
+#example-text {
+    text-align: center;
+    font-family: 'Cormorant SC, serif arial, Helvetica, sans-serif';
+    font-size: 15;
+    color: white;
+    margin-bottom: 40px;
+}
+
+#example-text a {
+    color:white;
+}
+
+.mana-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;
+    flex-shrink: 2;
+    margin-bottom: 60px;
+}
+
+.plains-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 2px;
+    border: 2px solid;
+    border-radius: 15px;
+    box-shadow: 3px 3px white;
+    background-color: black;
+    background-image: url("./plains.webp");
+    background-size: cover;
+    
+    padding: 0px 50px;
+
+}
+
+#plains-counter {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    margin: 10px;
+    color: white;
+    text-shadow: 0 1px 0 #ccc, 
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+    font-family: 'MedievalSharp', cursive, Arial, Helvetica, sans-serif;
+}
+
+#plains-plus-button, #plains-minus-button {
+    font-family: 'MedievalSharp', cursive, Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-align: center;
+    border: 2px solid;
+    border-radius: 15px;
+    margin: 5px 10px;
+    padding: 0px 10px;
+    box-shadow: 3px 3px black;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    user-select: none;
+}
+
+.swamp-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 2px;
+    padding: 0px 50px;
+    border: 2px solid;
+    border-radius: 15px;
+    box-shadow: 3px 3px white;
+    background-color: black;
+    background-image: url("./swamp.webp");
+    background-size: cover;
+
+}
+
+#swamp-counter {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    margin: 10px;
+    color: white;
+    text-shadow: 0 1px 0 #ccc, 
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+    font-family: 'MedievalSharp', cursive, Arial, Helvetica, sans-serif;
+}
+
+#swamp-plus-button, #swamp-minus-button {
+    font-family: 'MedievalSharp', cursive, Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-align: center;
+    border: 2px solid;
+    border-radius: 15px;
+    margin: 5px 10px;
+    padding: 0px 10px;
+    box-shadow: 3px 3px black;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    user-select: none;
+}
+
+.mountain-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 2px;
+    padding: 0px 50px;
+    border: 2px solid;
+    border-radius: 15px;
+    box-shadow: 3px 3px white;
+    background-color: black;
+    background-image: url("./mountain.webp");
+    background-size: cover;
+}
+
+#mountain-counter {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    margin: 10px;
+    color: white;
+    text-shadow: 0 1px 0 #ccc, 
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+    font-family: 'MedievalSharp', cursive, Arial, Helvetica, sans-serif;
+}
+
+#mountain-plus-button, #mountain-minus-button {
+    font-family: 'MedievalSharp', cursive, Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-align: center;
+    border: 2px solid;
+    border-radius: 15px;
+    margin: 5px 10px;
+    padding: 0px 10px;
+    box-shadow: 3px 3px black;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    user-select: none;
+}
+
+#mountain-img {
+    max-height: 50px;
+    max-width: 50px;
+}
+
+.forest-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 2px;
+    border: 2px solid;
+    padding: 0px 50px;
+    border-radius: 15px;
+    box-shadow: 3px 3px white;
+    background-color: black;
+    background-image: url("./forest.webp");
+    background-size: cover;
+
+}
+
+#forest-counter {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    margin: 10px;
+    color: white;
+    text-shadow: 0 1px 0 #ccc, 
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+    font-family: 'MedievalSharp', cursive, Arial, Helvetica, sans-serif;
+}
+
+#forest-plus-button, #forest-minus-button {
+    font-family: 'MedievalSharp', cursive, Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-align: center;
+    border: 2px solid;
+    border-radius: 15px;
+    margin: 5px 10px;
+    padding: 0px 10px;
+    box-shadow: 3px 3px black;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    user-select: none;
+}
+
+#forest-img {
+    max-height: 50px;
+    max-width: 50px;
+}
+
+.island-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 2px;
+    padding: 0px 50px;
+    border: 2px solid;
+    border-radius: 15px;
+    box-shadow: 3px 3px white;
+    background-color: black;
+    background-image: url("./island.webp");
+    background-size: cover;
+
+}
+
+#island-counter {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    margin: 10px;
+    color: white;
+    text-shadow: 0 1px 0 white
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+    font-family: 'MedievalSharp', cursive, Arial, Helvetica, sans-serif;
+}
+
+#island-plus-button, #island-minus-button {
+    font-family: 'MedievalSharp', cursive, Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-align: center;
+    border: 2px solid;
+    border-radius: 15px;
+    margin: 5px 10px;
+    padding: 0px 10px;
+    box-shadow: 3px 3px grey;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    user-select: none;
+}
+
+#island-img {
+    max-height: 50px;
+    max-width: 50px;
+}
+
+.colorless-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 2px;
+    padding: 0px 50px;
+    border: 2px solid;
+    border-radius: 15px;
+    box-shadow: 3px 3px white;
+    background-color: black;
+    background-image: url("./colorless.webp");
+    background-size: cover;
+
+}
+
+#colorless-counter {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    margin: 10px;
+    color: white;
+    text-shadow: 0 1px 0 #ccc, 
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+    font-family: 'MedievalSharp', cursive, Arial, Helvetica, sans-serif;
+}
+
+#colorless-plus-button, #colorless-minus-button {
+    font-family: 'MedievalSharp', cursive, Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-align: center;
+    border: 2px solid;
+    border-radius: 15px;
+    margin: 5px 10px;
+    padding: 0px 10px;
+    box-shadow: 3px 3px black;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+
+#colorless-img {
+    max-height: 50px;
+    max-width: 50px;
+}
+
+.reset-container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    flex-shrink: 2;
+    margin: 60px;
+}
+
+#reset-button {
+    font-family: 'Cormorant SC', serif, Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-align: center;
+    border: 2px solid;
+    border-radius: 15px;
+    margin: 5px 10px;
+    box-shadow: 3px 3px white;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+
+footer a, p, h2 {
+    color: white;
+    font-family: 'Cormorant SC', serif', arial, helvetica, sans-serif';
+}
+
+form {
+    margin-top: 10px;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+form ::placeholder {
+    text-align: center;
+    font-family: 'Cormorant SC', serif', arial, helvetica, sans-serif';
+}
+
+#player-name {
+    text-align: center;
+    font-family: 'Cormorant SC', serif', arial, helvetica, sans-serif';
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (orientation: landscape) {
+    
+    .life-counter-container {
+        display: flex;
+        flex-direction: column;
+        margin: 0px 0px;
+        border: 2px solid;
+        border-radius: 15px;
+        box-shadow: 3px 3px white;
+        background-color: black;
+        
+        }
+
+        .p2-commander-damage-container {
+            display: flex;
+            flex-direction: column;
+            margin: 0px 0px;
+            border: 2px solid;
+            border-radius: 15px;
+            box-shadow: 3px 3px white;
+            background-color: black;
+        
+        }
+
+    
+        .p3-commander-damage-container {
+            display: flex;
+            flex-direction: column;
+            margin: 0px 0px;
+            border: 2px solid;
+            border-radius: 15px;
+            box-shadow: 3px 3px white;
+            background-color: black;
+        
+        }
+
+        .p4-commander-damage-container {
+            display: flex;
+            flex-direction: column;
+            margin: 0px 0px;
+            border: 2px solid;
+            border-radius: 15px;
+            box-shadow: 3px 3px white;
+            background-color: black;
+        
+        }
+    
+    
+    .plains-container {
+        display: flex;
+        flex-direction: column;
+        margin: 0 10px;
+        border: 2px solid;
+        border-radius: 15px;
+        box-shadow: 3px 3px white;
+        background-color: black;
+        background-image: url("./plains.webp");
+        background-size: cover;
+        
+        padding: 0px 50px;
+    
+    }
+
+    .swamp-container {
+        display: flex;
+        flex-direction: column;
+        margin: 0 10px;
+        padding: 0px 50px;
+        border: 2px solid;
+        border-radius: 15px;
+        box-shadow: 3px 3px white;
+        background-color: black;
+        background-image: url("./swamp.webp");
+        background-size: cover;
+    
+    }
+
+    .mountain-container {
+        display: flex;
+        flex-direction: column;
+        margin: 0 10px;
+        padding: 0px 50px;
+        border: 2px solid;
+        border-radius: 15px;
+        box-shadow: 3px 3px white;
+        background-color: black;
+        background-image: url("./mountain.webp");
+        background-size: cover;
+    }
+
+    .forest-container {
+        display: flex;
+        flex-direction: column;
+        margin: 0 10px;
+        border: 2px solid;
+        padding: 0px 50px;
+        border-radius: 15px;
+        box-shadow: 3px 3px white;
+        background-color: black;
+        background-image: url("./forest.webp");
+        background-size: cover;
+    
+    }
+
+    .island-container {
+        display: flex;
+        flex-direction: column;
+        margin: 0 10px;
+        padding: 0px 50px;
+        border: 2px solid;
+        border-radius: 15px;
+        box-shadow: 3px 3px white;
+        background-color: black;
+        background-image: url("./island.webp");
+        background-size: cover;
+    
+    }
+
+    .colorless-container {
+        display: flex;
+        flex-direction: column;
+        margin: 0 10px;
+        padding: 0px 50px;
+        border: 2px solid;
+        border-radius: 15px;
+        box-shadow: 3px 3px white;
+        background-color: black;
+        background-image: url("./colorless.webp");
+        background-size: cover;
+    
+    }
+
+}

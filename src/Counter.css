@@ -1,0 +1,269 @@
+.counter-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.life-counter-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+    border: 2px solid;
+    border-radius: 15px;
+    box-shadow: 3px 3px white;
+    background-color: black;
+    
+    }
+    
+    #life-counter-title {
+        text-align: center;
+        font-family: 'Cormorant SC', serif, Arial, Helvetica, sans-serif;
+        color: white;
+        text-shadow: 2px 2px gray;
+    }
+
+    .life-counter-container h3, .p2-commander-damage-container h3, .p3-commander-damage-container h3,
+    .p4-commander-damage-container h3{
+        text-align: center;
+        color: white;
+        text-shadow: 0 1px 0 #ccc, 
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+        font-family: 'MedievalSharp', cursive, Arial, Helvetica, sans-serif;
+    }
+    
+    #life-counter {
+        text-align: center;
+        font-size: 25px;
+        font-weight: 600;
+        color: white;
+        margin: 10px;
+        text-shadow: 0 1px 0 #ccc, 
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+        font-family: 'MedievalSharp', cursive, Arial, Helvetica, sans-serif;
+    }
+    
+    #life-plus-button, #life-minus-button {
+        font-family: 'MedievalSharp', cursive, Arial, Helvetica, sans-serif;
+        font-size: 25px;
+        text-align: center;
+        border: 2px solid;
+        border-radius: 15px;
+        margin: 5px 10px;
+        box-shadow: 3px 3px black;
+        color: white;
+        background-color: black;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .counter-box :hover , #reset-button :hover, .plains-container :hover, .swamp-container :hover,
+    .mountain-container :hover, .forest-container :hover, .island-container :hover, .colorless-container :hover {
+        transition: ease-in;
+        transition-duration: 80ms;
+        opacity: 0.7;
+    }
+
+
+
+
+.p2-commander-damage-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+    border: 2px solid;
+    border-radius: 15px;
+    box-shadow: 3px 3px white;
+    background-color: black;
+
+}
+
+#p2-commander-damage-title {
+    text-align: center;
+    color: white;
+    font-family: 'Cormorant SC', serif, Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px gray;
+}
+
+#p2-commander-damage-counter {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    margin: 10px;
+    color: white;
+    text-shadow: 0 1px 0 #ccc, 
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+    font-family: 'MedievalSharp', cursive, Arial, Helvetica, sans-serif;
+}
+
+#p2-commander-damage-plus-button, #p2-commander-damage-minus-button {
+    font-family: 'MedievalSharp', cursive, Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-align: center;
+    border: 2px solid;
+    border-radius: 15px;
+    margin: 5px 10px;
+    box-shadow: 3px 3px black;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    user-select: none;
+}
+
+.p3-commander-damage-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+    border: 2px solid;
+    border-radius: 15px;
+    box-shadow: 3px 3px white;
+    background-color: black;
+
+}
+
+#p3-commander-damage-title {
+    text-align: center;
+    color: white;
+    font-family: 'Cormorant SC', serif, Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px gray;
+}
+
+#p3-commander-damage-counter {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    margin: 10px;
+    color: white;
+    text-shadow: 0 1px 0 #ccc, 
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+    font-family: 'MedievalSharp', cursive, Arial, Helvetica, sans-serif;
+}
+
+#p3-commander-damage-plus-button, #p3-commander-damage-minus-button {
+    font-family: 'MedievalSharp', cursive, Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-align: center;
+    border: 2px solid;
+    border-radius: 15px;
+    margin: 5px 10px;
+    box-shadow: 3px 3px black;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+.p4-commander-damage-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+    border: 2px solid;
+    border-radius: 15px;
+    box-shadow: 3px 3px white;
+    background-color: black;
+
+}
+
+#p4-commander-damage-title {
+    text-align: center;
+    font-family: 'Cormorant SC', serif, Arial, Helvetica, sans-serif;
+    color: white;
+    text-shadow: 2px 2px gray;
+}
+
+#p4-commander-damage-counter {
+    font-family: 'MedievalSharp', cursive, Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    margin: 10px;
+    color: white;
+    text-shadow: 0 1px 0 #ccc, 
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
+
+#p4-commander-damage-plus-button, #p4-commander-damage-minus-button {
+    font-family: 'MedievalSharp', cursive, Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-align: center;
+    border: 2px solid;
+    border-radius: 15px;
+    margin: 5px 10px;
+    box-shadow: 3px 3px black;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    user-select: none;
+}
+
+input{
+    width: 95%;
+}
+
+form {
+    margin-top: 10px;
+    border: 2px solid black;
+    width:100%;
+}
+
+input ::placeholder {
+    text-align: center;
+    font-family: 'Cormorant SC', serif', arial, helvetica, sans-serif';
+}
+
+#player-name {
+    text-align: center;
+    font-family: 'Cormorant SC', serif', arial, helvetica, sans-serif';
+}
+

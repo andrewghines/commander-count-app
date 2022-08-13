@@ -1,0 +1,62 @@
+.mutate {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.mutate-box {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+    border: 2px solid;
+    border-radius: 15px;
+    box-shadow: 3px 3px white;
+    background-color: black;
+
+}
+
+#loyalty-title {
+    text-align: center;
+    font-family: 'Cormorant SC', serif, Arial, Helvetica, sans-serif;
+    color: white;
+    text-shadow: 2px 2px gray;
+}
+
+#first-mutate-counter, #second-mutate-counter,
+#third-mutate-counter, #forth-mutate-counter {
+    font-family: 'MedievalSharp', cursive, Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    margin: 10px;
+    color: white;
+    text-shadow: 0 1px 0 #ccc, 
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
+
+#first-mutate-plus-button, #first-mutate-minus-button, 
+#second-mutate-plus-button, #second-mutate-minus-button,
+#third-mutate-plus-button, #third-mutate-minus-button,
+#forth-mutate-plus-button, #forth-mutate-minus-button {
+    font-family: 'MedievalSharp', cursive, Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-align: center;
+    border: 2px solid;
+    border-radius: 15px;
+    margin: 5px 10px;
+    box-shadow: 3px 3px black;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    user-select: none;
+}
